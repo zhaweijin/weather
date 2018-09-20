@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.imt.weather"
+       android:versionCode="29"
+      android:versionName="2.9">
+      <uses-sdk android:minSdkVersion="14" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="com.imt.weather.WeatherMain"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/widget_big" android:name="com.imt.weather.WeatherWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/weather_widget" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.xuzhi.weather.UPDATE_WIDGET" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="WeatherSetting"></activity>
+        <activity android:name="com.imt.weather.WeatherSearch"></activity>
+        <service android:name ="com.imt.weather.RemoteWeatherService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.imt.weahter.MAIN"/>
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission> 
+</manifest>

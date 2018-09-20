@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#ff333333</color>
+    <color name="setting_menu_text">#ffa4d7ff</color>
+    <color name="half_transparent">#55ffffff</color>
+    <color name="dragndrop_background">#e0103010</color>
+    
+    <color name="weather_main_text_color">#FFD8D7DB</color>
+    
+    <color name="weather_main_text_shadow_color">#FF5B5D60</color>
+    
+</resources>

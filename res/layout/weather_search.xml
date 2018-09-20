@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_top_background"
+        android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:id="@+id/editSearchcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dip"
+            android:textColor="@android:color/black"
+            android:background="@drawable/search_input_background"
+            android:cursorVisible="true"
+            android:paddingLeft="10dip"
+            android:textSize="@dimen/smaill_font_size"
+            android:drawableLeft="@drawable/search_icon"
+            android:hint="@string/city"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editSearchcity"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="@string/Search"
+            android:textColor="@color/black"
+            android:textSize="15.0dip" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listSearchResult"
+        android:layout_width="700dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutSearch"
+        android:divider="@drawable/horizontal_div"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip" />
+    <ImageView
+        android:id="@+id/buttom_line"
+        android:layout_width="700dip"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:visibility="gone"
+        android:layout_below="@+id/listSearchResult"
+        android:background="@drawable/horizontal_div" />
+
+</RelativeLayout>

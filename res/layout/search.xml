@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:scrollbars="vertical"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:textSize="20.0dip" android:textColor="@color/setting_menu_text"
+		android:gravity="center" android:id="@+id/txtSearchcity"
+		android:layout_width="wrap_content" android:layout_height="40.0dip"
+		android:text="@string/search_city" android:layout_centerHorizontal="true" />
+	<RelativeLayout android:id="@+id/layoutSearch"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/txtSearchcity"
+		android:layout_centerHorizontal="true">
+		<EditText android:id="@+id/editSearchcity"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:cursorVisible="true" android:singleLine="true"
+			android:layout_below="@+id/txtSearchcity" />
+		<Button android:textSize="20.0dip" android:textColor="@color/black"
+			android:id="@+id/btnSearch" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/search"
+			android:layout_below="@+id/editSearchcity" />
+	</RelativeLayout>
+	<ListView android:id="@+id/listSearchResult"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+		android:layout_marginBottom="20.0dip" android:layout_below="@+id/layoutSearch" />
+</RelativeLayout>

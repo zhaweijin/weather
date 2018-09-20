@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget38"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	>
+
+    <RelativeLayout
+        android:id="@+id/widget39"
+        android:background="@drawable/city_manager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:focusable="false"
+            android:clickable="false"
+            android:background="@drawable/manager_city_add" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="130dip"
+            android:layout_height="130dip"            
+            android:layout_marginLeft="50dip"
+            android:layout_centerVertical="true" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/smaill_font_size"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/white"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/weather_temperature_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginTop="25dip"
+            android:layout_marginLeft="80dip"
+            android:layout_below="@+id/weather_icon"
+            android:textColor="@color/white"
+			>
+        </TextView>
+        
+        <TextView
+            android:id="@+id/weather_temperature_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/weather_temperature_high"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="30dip"
+            android:layout_below="@+id/weather_icon"
+            android:textColor="@color/white"
+			>
+        </TextView>
+    </RelativeLayout>
+	<CheckBox
+        android:id="@+id/cb_default_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="10dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        />
+</FrameLayout>
